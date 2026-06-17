@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicky Spa Relax | Luxury & Beauty</title>
+    <meta name="description" content="Vicky Spa Relax en Cabo San Lucas. Masajes, tratamientos faciales, corporales y servicio a domicilio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primario: #D62878;
+            --oscuro: #B01E63;
+            --secundario: #FBEBF3;
+            --acento: #C19A6B;
+            --texto: #2D2326;
+            --claro: #7A656B;
+            --fondo: #FEFCFD;
+            --blanco: #FFFFFF;
+        }
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {font-family: 'Montserrat', sans-serif; background: var(--fondo); color: var(--texto); line-height: 1.8;}
+        h1, h2, h3 {font-family: 'Cinzel', serif; color: var(--primario);}
+        .container {width: 92%; max-width: 1200px; margin: 0 auto;}
+        .header {position: fixed; width: 100%; top: 0; background: rgba(254,252,253,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(214,40,120,0.15); z-index: 999; padding: 1rem 0;}
+        .header .container {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;}
+        .logo {display: flex; align-items: center; gap: 0.8rem;}
+        .logo p {color: var(--acento); text-transform: uppercase; font-size: 0.85rem;}
+        .nav {display: flex; gap: 1.2rem; flex-wrap: wrap;}
+        .nav a {text-decoration: none; color: var(--texto); font-weight: 500; font-size: 0.9rem;}
+        .nav a:hover {color: var(--primario);}
+        .hero {margin-top: 90px; min-height: 85vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes/ventosas-masaje.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center;}
+        .hero-content {color: var(--blanco); padding: 2rem; max-width: 750px;}
+        .hero h2 {font-size: clamp(2rem, 5vw, 3rem); color: var(--blanco);}
+        .btn {display: inline-block; padding: 1rem 2.2rem; background: linear-gradient(135deg, var(--primario), var(--oscuro)); color: var(--blanco); border-radius: 50px; text-decoration: none; font-weight: 500; box-shadow: 0 4px 15px rgba(214,40,120,0.2);}
+        .section {padding: 5rem 0;}
+        .section-alt {background: var(--secundario);}
+        .titulo {text-align: center; margin-bottom: 3rem;}
+        .divisor {width: 70px; height: 3px; margin: 0 auto; background: linear-gradient(90deg, var(--primario), var(--acento)); border-radius: 3px;}
+        .grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;}
+        .card {background: var(--blanco); padding: 2rem; border-radius: 14px; border: 1px solid rgba(214,40,120,0.15); box-shadow: 0 4px 12px rgba(214,40,120,0.08); text-align: center;}
+        .galeria {display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;}
+        .galeria img {width: 100%; height: 200px; object-fit: cover; border-radius: 10px;}
+        .form {max-width: 650px; margin: 0 auto; background: var(--blanco); padding: 2rem; border-radius: 14px; border: 1px solid rgba(214,40,120,0.15);}
+        .form-group {margin-bottom: 1.2rem;}
+        .form-group label {display: block; margin-bottom: 0.5rem; font-weight: 500;}
+        .form-group input, .form-group select, .form-group textarea {width: 100%; padding: 0.9rem; border: 1px solid rgba(214,40,120,0.15); border-radius: 8px; background: var(--fondo); font: inherit;}
+        footer {background: var(--texto); color: var(--blanco); padding: 2rem 0; text-align: center;}
+        .whatsapp {position: fixed; bottom: 25px; right: 25px; width: 65px; height: 65px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(37,211,102,0.3);}
+        .whatsapp::after {content: "💬"; font-size: 26px; color: white;}
+        @media (max-width: 768px) {.nav {justify-content: center;} .hero h2 {font-size: 2rem;}}
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="imagenes/logo-vicky-spa.png" alt="Logo Vicky Spa">
+            <div>
+                <h1>Vicky Spa Relax</h1>
+                <p>Luxury & Beauty</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#domicilio">A Domicilio</a>
+            <a href="#reserva">Reservar</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h2>Cuerpo • Mente • Alma</h2>
+        <p>Experiencia de lujo en Cabo San Lucas</p>
+        <a href="#reserva" class="btn">Reservar Cita</a>
+    </div>
+</section>
+
+<section id="servicios" class="section">
+    <div class="container">
+        <div class="titulo">
+            <h2>Nuestros Tratamientos</h2>
+            <div class="divisor"></div>
+        </div>
+        <div class="grid">
+            <div class="card"><h3>Masaje Relajante</h3><p>Alivia estrés y renueva energía.</p></div>
+            <div class="card"><h3>Masaje Descontracturante</h3><p>Elimina nudos y dolores musculares.</p></div>
+            <div class="card"><h3>Piedras Calientes</h3><p>Relajación profunda y mejora circulación.</p></div>
+            <div class="card"><h3>Ventosas Terapéuticas</h3><p>Desintoxica y mejora flujo sanguíneo.</p></div>
+            <div class="card"><h3>Radiofrecuencia</h3><p>Reafirma y rejuvenece la piel.</p></div>
+            <div class="card"><h3>Dermapen</h3><p>Estimula colágeno y reduce manchas.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="galeria" class="section section-alt">
+    <div class="container">
+        <div class="titulo">
+            <h2>Galería</h2>
+            <div class="divisor"></div>
+        </div>
+        <div class="galeria">
+            <img src="imagenes/dermapen-facial.jpg" alt="Dermapen">
+            <img src="imagenes/hieloterapia.jpg" alt="Hieloterapia">
+            <img src="imagenes/ventosas-madera.jpg" alt="Masaje">
+            <img src="imagenes/estetica-salon.jpg" alt="Instalaciones">
+        </div>
+    </div>
+</section>
+
+<section id="domicilio" class="section">
+    <div class="container" style="text-align: center; max-width: 800px;">
+        <h2>Servicio a Domicilio</h2>
+        <p>Llevamos toda la experiencia de lujo hasta tu hogar, oficina o lugar que elijas. Disponible en Cabo San Lucas y alrededores.</p>
+    </div>
+</section>
+
+<section id="reserva" class="section section-alt">
+    <div class="container">
+        <div class="titulo">
+            <h2>Reserva tu Cita</h2>
+            <div class="divisor"></div>
+        </div>
+        <form class="form" name="reserva" method="POST" action="/exito.html" data-netlify="true" data-netlify-honeypot="bot">
+            <input type="hidden" name="form-name" value="reserva">
+            <div class="form-group">
+                <label>Nombre completo *</label>
+                <input type="text" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label>Correo electrónico *</label>
+                <input type="email" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label>WhatsApp *</label>
+                <input type="tel" name="telefono" placeholder="624 118 9249" required>
+            </div>
+            <div class="form-group">
+                <label>Servicio deseado *</label>
+                <select name="servicio" required>
+                    <option value="">Selecciona</option>
+                    <option>Masaje Relajante</option>
+                    <option>Masaje Descontracturante</option>
+                    <option>Piedras Calientes</option>
+                    <option>Dermapen</option>
+                    <option>Radiofrecuencia</option>
+                    <option>A Domicilio</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Fecha</label>
+                <input type="date" name="fecha">
+            </div>
+            <div class="form-group">
+                <label>Comentarios</label>
+                <textarea name="mensaje" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Solicitud</button>
+        </form>
+    </div>
+</section>
+
+<section id="contacto" class="section">
+    <div class="container" style="text-align: center;">
+        <h2>Contacto</h2>
+        <p>📍 Cabo San Lucas, Baja California Sur</p>
+        <p>📞 WhatsApp: +52 624 118 9249</p>
+        <p>✉️ vickysparelax@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Vicky Spa Relax | Luxury & Beauty</p>
+</footer>
+<a href="https://wa.me/526241189249" class="whatsapp" target="_blank"></a>
+</body>
+</html>
