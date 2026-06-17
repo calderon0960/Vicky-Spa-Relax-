@@ -1,0 +1,12 @@
+# Archivos temporales y del sistema
+.DS_Store
+Thumbs.db
+*.log
+*.zip
+*.rar
+*.swp
+
+# Entornos y dependencias
+node_modules
+.env
+.env.local
